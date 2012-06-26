@@ -12,7 +12,10 @@ class RequestHandler(CGIHTTPRequestHandler):
         self.cgi_info = cgi, self.path[len(cgi):] # setting the PATH_INFO correctly eliminates the need of URL rewriting
         return self.path == '/' or self.path.startswith(cgi)
 
-httpd = HTTPServer(('127.0.0.1', 8000), RequestHandler)
+port = 8000
+httpd = HTTPServer(('127.0.0.1', port), RequestHandler)
+
+print('start serving on port %d...' % port)
 
 try:
     httpd.serve_forever()

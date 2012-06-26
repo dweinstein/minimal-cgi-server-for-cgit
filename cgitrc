@@ -1,6 +1,9 @@
+enable-commit-graph=1
 enable-index-links=1
 enable-log-filecount=1
 enable-log-linecount=1
+enable-remote-branches=1
+enable-subject-links=1
 snapshots=zip tar.bz2
 local-time=1
 max-stats=year
