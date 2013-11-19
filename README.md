@@ -10,6 +10,8 @@ This is a fork of https://github.com/shyang/minimal-cgi-server-for-cgit to bette
 * `cgit.cgi.darwin_x86-64` is a precompiled Mach-O (Mac os x) 64-bit binary. *I did not test this one*
 * Ignore lighttpd.conf, Makefile and cgit.rb (for Homebrew https://github.com/mxcl/homebrew/)
 * Before using, the scan-path in `cgitrc` should be changed.
+
+
 Run
 ===
 - `$ ./server.py` for Python 3+
